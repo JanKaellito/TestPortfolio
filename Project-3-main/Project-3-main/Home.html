@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DLSJBC Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="Style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-spinner"></div>
+</div>
+
+<header class="site-header">
+
+  <div class="brand">
+      <a href="DLSJBClogo.jpg">
+       <img src="DLSJBClogo.jpg" alt="Logo" class="logo">
+      </a>
+      <a href="Home.html">
+        <span class="school-name">De La Salle John Bosco College</span>
+      </a>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Admissions.html">Admissions</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Articles.html">Articles</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-social">
+      <a href="https://www.facebook.com/dlsjbc" target="_blank" title="Facebook">
+        <img src="fb icon.jpg" alt="Facebook" class="icon">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+      <button class="dark-toggle" id="darkToggle" title="Toggle dark mode">🌙</button>
+    </div>
+
+</header>
+
+<section class="hero-slider">
+  <div class="slider-track" id="sliderTrack">
+
+    <div class="slide active">
+      <img src="2026-2027.jpg" alt="Admission banner 1">
+    </div>
+
+    <div class="slide">
+      <img src="congrats.jpg" alt="Admission banner 2">
+    </div>
+
+    <div class="slide">
+      <img src="JBC.jpg" alt="Admission banner 3">
+    </div>
+
+    <div class="slide">
+      <img src="60th.jpg" alt="Admission banner 3">
+    </div>
+
+  </div>
+
+  <button class="slider-arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+  <button class="slider-arrow next" onclick="moveSlide(1)">&#10095;</button>
+
+  <div class="slider-dots" id="sliderDots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+    <span class="dot" onclick="goToSlide(3)"></span>
+  </div>
+</section>
+
+  <section class="news">
+    <h2>News</h2>
+    <div class="news-grid">
+
+      <article class="news-card">
+        <img src="News17.jpg" alt="Upcoming event" class="thumb">
+        <div class="content">
+          <a href="https://www.facebook.com/photo?fbid=1637010975092255" target="_blank">
+            <h3>𝐍𝐎𝐓𝐈𝐂𝐄 𝐎𝐅 𝐇𝐈𝐑𝐈𝐍𝐆</h3>
+          </a>
+          <p>DLSJBC is looking for a passionate, dedicated, and service-oriented professional to join our growing Lasallian community as...</p>
+          <span class="date">July 1, 2026</span>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="News16.jpg" alt="Upcoming event" class="thumb">
+        <div class="content">
+          <a href="https://www.facebook.com/photo?fbid=1640773738049312" target="_blank">
+            <h3>𝐂𝐮𝐥𝐭𝐢𝐯𝐚𝐭𝐢𝐧𝐠 𝐚 𝐆𝐫𝐞𝐞𝐧𝐞𝐫 𝐓𝐨𝐦𝐨𝐫𝐫𝐨𝐰: 𝐃𝐋𝐒𝐉𝐁𝐂 𝐂𝐞𝐥𝐞𝐛𝐫𝐚𝐭𝐞𝐬 𝐄𝐧𝐯𝐢𝐫𝐨𝐧𝐦𝐞𝐧𝐭 𝐌𝐨𝐧𝐭𝐡 𝟐𝟎𝟐𝟔</h3>
+          </a>
+          <p>De La Salle John Bosco College proudly joined the Environment Month Celebration 2026, reaffirming our commitment to environmental stewardship, sustainability...</p>
+          <span class="date">July 5, 2026</span>
+        </div>
+      </article>
+
+      <article class="news-card">
+          <img src="News14.jpg" alt="Upcoming event" class="thumb">
+          <div class="content">
+          <a href="https://www.facebook.com/photo/?fbid=1640823888044297" target= "_blank" title="news-title-link">
+            <h3>Balik Eskwela, Balik Pag-asa!</h3>
+          </a>
+            <p>As another school year begins, let us come together to make a difference in the lives of our adopted communities and partners...</p>
+          <span class="date">July 5, 2026</span>
+        </div>
+      </article>
+
+
+      <article class="news-card">
+        <img src="News15.jpg" alt="Upcoming event" class="thumb">
+        <div class="content">
+          <h3>𝐀 𝐓𝐑𝐔𝐄 𝐀𝐍𝐈𝐌𝐎 𝐏𝐑𝐈𝐌𝐄!🎉🥉</h3>
+          <p>Let us celebrate the remarkable achievement that our Lasallian Athletes have earned in the 𝟑𝟔𝐭𝐡 𝐀𝐫𝐚𝐰 𝐧𝐠 𝐌𝐚𝐧𝐠𝐚𝐠𝐨𝐲 competition that concluded last July 9, 2026...</p>
+          <span class="date">July 12, 2026</span>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <div class="placeholder-box thumb">Image</div>
+        <div class="content">
+          <h3>Upcoming</h3>
+          <p>Wait kalang Atat yarn</p>
+          <span class="date">Date</span>
+        </div>
+      </article>
+
+    </div>
+
+    <a href="Articles.html" class="view-all">View all &rarr;</a>
+  </section>
+
+  <section class="calendar">
+    <h2>Calendar</h2>
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>May 1, 2026</td><td>Labor Day</td></tr>
+        <tr><td>June 12, 2026</td><td>Independence Day</td></tr>
+        <tr><td>August 26, 2026</td><td>Ninoy Aquino Day</td></tr>
+        <tr><td>August 31, 2026</td><td>National Heroes Day</td></tr>
+        <tr><td>November 30, 2026</td><td>Bonifacio Day</td></tr>
+        <tr><td>December 24, 2026</td><td>Christmas Eve</td></tr>
+        <tr><td>December 25, 2026</td><td>Christmas Day</td></tr>
+        <tr><td>December 30, 2026</td><td>Rizal Day</td></tr>
+        <tr><td>December 31, 2026</td><td>New Year's Eve</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="site-footer">
+    <img src="DLSJBClogo.jpg" alt="School Logo" class="footer-logo">
+    <div class="footer-name">De La Salle John Bosco College</div>
+    <div class="footer-address">De La Salle Drive, Mangagoy, Bislig City, Surigao del Sur, Philippines</div>
+    <div class="footer-email">info@dlsjbc.edu.ph</div>
+
+
+    <div class="footer-copyright">&copy; 2026 by De La Salle John Bosco College</div>
+  </footer>
+
+<script src="WEBscript.js"></script>
+</body>
+</html>
