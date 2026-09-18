@@ -80,6 +80,7 @@
           .catch(function () { note.textContent = 'Could not add that link.'; });
       });
         
+})();     
    // API Tester — sends a GET request to whatever URL the visitor enters,
 // and renders the response as readable rows instead of raw JSON text
 (function () {
